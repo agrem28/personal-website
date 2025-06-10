@@ -1,3 +1,7 @@
 export default function Page() {
-  return <h1>Homepage</h1>;
+  return (
+    <main>
+      <h1 className="">Homepage</h1>
+    </main>
+  );
 }
