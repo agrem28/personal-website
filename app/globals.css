@@ -23,7 +23,7 @@
   --color-navbar: var(--navbar);
   --color-border: #424853;
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: Consolas, 'Courier New', monospace;
 }
 
 html {
