@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 // import { Oswald } from "next/font/google";
-import { Roboto_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/app/ui/navbar";
+// import Navbar from "@/app/ui/navbar";
 
 // const oswald = Oswald({ subsets: ["latin"], weight: "400" });
-const robotoMono = Roboto_Mono({ subsets: ["latin"], weight: "400" });
+const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
   title: "Andrew Gremillion",
@@ -20,9 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${robotoMono.className} antialiased md:px-10 scroll-smooth`}
+        className={`${roboto.className} antialiased m-10 md:mx-[calc((100vw-756px)/2)] lg:mx-[calc((100vw-1024px)/2)] md:max-w-[756px] lg:max-w-[1024px]  scroll-smooth`}
       >
-        <Navbar />
         {children}
       </body>
     </html>

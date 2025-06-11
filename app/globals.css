@@ -2,14 +2,14 @@
 
 :root {
   --background: #e5e5e5;
-  --foreground: #0a0a0a;
+  --foreground: #121922;
   --hover: #a3a3a3;
   --navbar: #d4d4d4;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #121922;
     --foreground: #e5e5e5;
     --hover: #262626;
     --navbar: #171717;
@@ -21,6 +21,7 @@
   --color-foreground: var(--foreground);
   --color-hover: var(--hover);
   --color-navbar: var(--navbar);
+  --color-border: #424853;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -35,11 +36,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-  margin-top: calc(var(--spacing) * 14);
+h1 {
+  font-weight: 700;
+  font-size: var(--text-4xl);
 }
 
-/* .menu-icon {
-  width: 1rem;
-  height: 1rem;
-} */
+h2 {
+  font-weight: 700;
+  font-size: var(--text-3xl);
+}
